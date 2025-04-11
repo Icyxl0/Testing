@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(to right, #0359db, #b4bdd3);
+}
+
+#card {
+  width: 40vw;
+  aspect-ratio: 2 / 1;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+@media (max-width: 1024px) {
+  body {
+    color: red;
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    color: blue;
+    font-size: 0.25rem;
+  }
+}
+
+
+.counters {
+  color: white;
+}
