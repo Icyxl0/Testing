@@ -2,47 +2,48 @@
   box-sizing: border-box;
 }
 
-.centered-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 html,
 body {
-  height: 100%;
-  margin: 0;
-  background: linear-gradient(to right, #0359db, #b4bdd3);
+  height: 100vh;
+  background-image: url("https://picsum.photos/1920/1080");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center
 }
 
-#card {
-  width: 40vw;
-  aspect-ratio: 2 / 1;
-  border-radius: 1rem;
-  background-color: white;
+main {
   display: flex;
+  height: 100vh;
   justify-content: center;
   align-items: center;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
-
 }
 
-@media (max-width: 1024px) {
-  body {
-    color: red;
-    font-size: 0.8rem;
-  }
+.shelf-container {
+  aspect-ratio: 3 / 1;
+  width: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-@media (max-width: 480px) {
-  body {
-    color: blue;
-    font-size: 0.5rem;
-  }
+.album-container {
+  display: flex;
+  height: 70%;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
 
+.album {
+  aspect-ratio: 1 / 1;
+  height: 75%;
+  border: 2px solid black;
+  border-radius: 25%;
+  background-color: blue;
+}
 
-.counters {
-  color: white;
+.shelf {
+  height: 30%;
+  width: 100%;
+  background-color: burlywood;
 }
